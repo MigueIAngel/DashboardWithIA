@@ -8,12 +8,11 @@ import os
 from pathlib import Path
 from datetime import datetime
 from tablesScript import BuscadorCodeunit
+from config import AI_API_KEY, DEFAULT_REPOS_PATH
 
 
 from ai_helper import AIHelper, create_ai_helper
 
-
-AI_API_KEY = "AIzaSyD8wLdBI70CLlGcLXQms5ZRn0fPUBJefew"
 
 def inicializar_session_state():
     """Inicializa todas las variables del session state"""
@@ -218,7 +217,7 @@ def crear_dashboard():
     
     ruta_repositorios = st.sidebar.text_input(
         "Ruta de repositorios:",
-        value="/Users/miguelangel/Documents/AL/"
+        value=DEFAULT_REPOS_PATH
     )
     
     if st.sidebar.button("🚀 Ejecutar Análisis"):

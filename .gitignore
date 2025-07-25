@@ -1,0 +1,12 @@
+# .gitignore para proyecto LLB
+__pycache__/
+*.pyc
+.env
+config.py
+.DS_Store
+# Archivos temporales de Streamlit
+.streamlit/
+# Archivos de Jupyter
+*.ipynb_checkpoints
+# Archivos de sistema
+Thumbs.db
